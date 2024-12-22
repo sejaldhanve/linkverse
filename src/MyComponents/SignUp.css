@@ -1,0 +1,13 @@
+.cover{
+    display: flex;
+}
+.box {
+    border-radius: 4rem;
+    background: #ffffff;
+    margin: 0.5rem;
+    color: black;
+    width: 23rem;
+    height: 3rem;
+    text-align: center;
+    border: black 1px solid;
+}
