@@ -11,7 +11,8 @@ const reviews = [
   {
     name: "John Doe",
     logo: "data:image/png;base64,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", // Replace with actual logo URL
-    message: "This platform has revolutionized the way I connect with opportunities!",
+    message:
+      "This platform has revolutionized the way I connect with opportunities!",
   },
   {
     name: "Jane Smith",
@@ -21,114 +22,191 @@ const reviews = [
   {
     name: "Michael Johnson",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3m972e8FEvBi7ETC03avlJcZDg8nT9dWLSw&s", // Replace with actual logo URL
-    message: "Highly recommend this platform to anyone looking to grow their career.",
+    message:
+      "Highly recommend this platform to anyone looking to grow their career.",
   },
   {
     name: "Charlie Chaplin",
     logo: "data:image/png;base64,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", // Replace with actual logo URL
-    message: "Highly recommend this platform to anyone looking to grow their career.",
+    message:
+      "Highly recommend this platform to anyone looking to grow their career.",
   },
 ];
 
 export default function Content() {
   return (
     <>
-    <div className="content overflow-x-hidden">
-      {/* Main Content */}
-      <div className="row ">
-        <div className="col1">
-          <p className="tagline">Empowering Students, Connecting Careers</p>
-          <p className="desc">
-            Our app bridges the gap between talented students and top recruiters,
-            creating an ecosystem where opportunities meet potential. It
-            streamlines the recruitment process by providing a platform where
-            students can showcase their skills, achievements, and aspirations
-            while recruiters can easily find qualified candidates.
-          </p>
-          <button className="loginButton">Login</button>
-        </div>
-        <div className="col2">
-          <img src={myImage} alt="Hero Background" />
-        </div>
-      </div>
-
-      {/* Slider Section */}
-      <center>
-      <div className="row2">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          loop={true}
-          speed={600}
-          autoplay={{ delay: 5000 }}
-          centeredSlides={true}
-          slidesPerView="auto"
-          navigation
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <div className="item">
-              <center><img src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/Where-Will-Artificial-Intelligence-Take-Us-In-The-Future-/960x0.jpg?format=jpg&width=960" alt="" /></center>
-              <h2>Artificial Intelligence</h2>
-              <p>
-              AI is revolutionizing industries by automating tasks and enhancing decision-making. Learning AI opens up career opportunities in fields like healthcare, finance, and tech. It's essential for staying ahead in an increasingly automated and data-driven world.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item">
-            <center><img src="https://media.licdn.com/dms/image/D4D12AQFQlRQ-oMdAgg/article-cover_image-shrink_720_1280/0/1701428273349?e=2147483647&v=beta&t=XZd4xTJR-jvGW-EYH2wqrno41XvUtuXYlnPrW192qDg" alt="" /></center>
-              <h2>Embedded System</h2>
-              <p>
-              Embedded systems are the backbone of modern technology, powering devices from smartphones to IoT. Learning embedded systems offers exciting career opportunities and equips you to innovate in a world increasingly reliant on smart, efficient hardware solutions.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="item">
-            <center><img src="https://www.cloudcredential.org/wp-content/uploads/2021/07/iot.jpg" alt="" /></center>
-              <h2>Internet of Things</h2>
-              <p>
-              IoT (Internet of Things) is revolutionizing how devices connect and interact, enabling smarter homes, industries, and cities. Learning IoT opens doors to cutting-edge innovation and impactful careers in a rapidly growing, tech-driven world.
-              </p>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-      </center>
-
-      <div className="about_contact">
-      <div className="vision">
-        <h2 className="visionHeading">Our Vision</h2>
-        <p className="visionContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempora temporibus dolor vel placeat hic, libero impedit repellat consectetur, excepturi consequuntur. Nisi, accusantium id laboriosam molestiae laborum dolorum libero ab! </p>
-      </div>
-      <div className="mission">
-        <h2 className="missionHeading">Our Mission</h2>
-        <p className="missionContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempora temporibus dolor vel placeat hic, libero impedit repellat consectetur, excepturi consequuntur. Nisi, accusantium id laboriosam molestiae laborum dolorum libero ab! </p>
-      </div>
-      </div>
-
-
-      <center>
-      <div className="contact">
-        <p>Helping you is what we do best. Contact us today!</p>
-        <button>Contact Us!</button>
-      </div></center>
-
-      <div className="review-section">
-      <h2>What People Say About Us</h2>
-      <div className="review-row">
-        {reviews.map((review, index) => (
-          <div className="review-card" key={index}>
-            <img src={review.logo} alt={`${review.name}'s logo`} className="review-logo" />
-            <h3 className="review-name">{review.name}</h3>
-            <p className="review-message">{review.message}</p>
+      <div className="content overflow-x-hidden">
+        {/* Main Content */}
+        <div className="row ">
+          <div className="col1">
+            <p className="tagline">Empowering Students, Connecting Careers</p>
+            <p className="desc">
+              Our app bridges the gap between talented students and top
+              recruiters, creating an ecosystem where opportunities meet
+              potential. It streamlines the recruitment process by providing a
+              platform where students can showcase their skills, achievements,
+              and aspirations while recruiters can easily find qualified
+              candidates.
+            </p>
+            <button className="loginButton">Login</button>
           </div>
-        ))}
-      </div>
-    </div>
-    </div>
+          <div className="col2">
+            <img src={myImage} alt="Hero Background" />
+          </div>
+        </div>
 
-     
+        <div class="slider-container">
+          <div class="slider">
+            <div class="box">
+              <div class="image-container">
+              <center>
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/66bee357cf48b97789cbc270/Where-Will-Artificial-Intelligence-Take-Us-In-The-Future-/960x0.jpg?format=jpg&width=960"
+                  alt=""
+                />
+              </center>                
+              </div>
+              <center>
+                <h2>Artificial Intelligence</h2>
+              </center>
+              <p>
+                AI is revolutionizing industries by automating tasks and
+                enhancing decision-making. Learning AI opens up career
+                opportunities in fields like healthcare, finance, and tech.
+              </p>
+            </div>
+
+            <div class="box">
+
+              <div class="image-container">
+              <center>
+                <img
+                  src="https://www.cloudcredential.org/wp-content/uploads/2021/07/iot.jpg"
+                  alt=""
+                />
+              </center>                
+              
+              </div>
+              <center>
+                <h2>Embedded System</h2>
+              </center>
+              <p>
+                IoT (Internet of Things) is revolutionizing how devices connect
+                and interact, enabling smarter homes, industries, and cities.
+                Learning IoT opens doors to cutting-edge innovation and
+                impactful careers in a rapidly growing, tech-driven world.
+              </p>
+            </div>
+            <div class="box">
+              <div class="image-container">
+              <center>
+                <img
+                  src="https://media.licdn.com/dms/image/D4D12AQFQlRQ-oMdAgg/article-cover_image-shrink_720_1280/0/1701428273349?e=2147483647&v=beta&t=XZd4xTJR-jvGW-EYH2wqrno41XvUtuXYlnPrW192qDg"
+                  alt=""
+                />
+              </center>                
+              
+              </div>
+
+              <center>
+                <h2>Embedded System</h2>
+              </center>
+              <p>
+                Embedded systems are the backbone of modern technology, powering
+                devices from smartphones to IoT. Learning embedded systems
+                offers exciting career opportunities and equips you to innovate
+                in a world increasingly reliant on smart, efficient hardware
+                solutions.
+              </p>
+            </div>
+            <div class="box">
+              
+              <div class="image-container">
+              <center>
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/635f79fbf214917bd2876e03/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+                  alt=""
+                />
+              </center>                
+              </div>
+              <center>
+                <h2>Data Science and Analytics</h2>
+              </center>
+              <p>
+                Data Science is the field of using scientific methods,
+                algorithms, and tools to extract meaningful insights from
+                structured and unstructured data. Analytics focuses on
+                interpreting data patterns and trends to make informed decisions
+                and solve specific business problems. Both aim to turn data into
+                actionable knowledge.
+              </p>
+            </div>
+            <div class="box">
+              <div class="image-container">
+              <center>
+                <img
+                  src="https://www.cm-alliance.com/hubfs/60776739_l%20%281%29.jpg"
+                  alt=""
+                />
+              </center>                
+              </div>
+              <center>
+                <h2>Cybersecurity</h2>
+              </center>
+              <p>
+              Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, unauthorized access, and damage. It involves implementing technologies, processes, and policies to ensure the confidentiality, integrity, and availability of information.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div className="about_contact">
+          <div className="vision">
+            <h2 className="visionHeading">Our Vision</h2>
+            <p className="visionContent">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, tempora temporibus dolor vel placeat hic, libero
+              impedit repellat consectetur, excepturi consequuntur. Nisi,
+              accusantium id laboriosam molestiae laborum dolorum libero ab!{" "}
+            </p>
+          </div>
+          <div className="mission">
+            <h2 className="missionHeading">Our Mission</h2>
+            <p className="missionContent">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, tempora temporibus dolor vel placeat hic, libero
+              impedit repellat consectetur, excepturi consequuntur. Nisi,
+              accusantium id laboriosam molestiae laborum dolorum libero ab!{" "}
+            </p>
+          </div>
+        </div>
+
+        <center>
+          <div className="contact">
+            <p>Helping you is what we do best. Contact us today!</p>
+            <button>Contact Us!</button>
+          </div>
+        </center>
+
+        <div className="review-section">
+          <h2>What People Say About Us</h2>
+          <div className="review-row">
+            {reviews.map((review, index) => (
+              <div className="review-card" key={index}>
+                <img
+                  src={review.logo}
+                  alt={`${review.name}'s logo`}
+                  className="review-logo"
+                />
+                <h3 className="review-name">{review.name}</h3>
+                <p className="review-message">{review.message}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
