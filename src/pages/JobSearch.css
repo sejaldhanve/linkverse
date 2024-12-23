@@ -39,6 +39,8 @@
   margin-right: 50px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f3f3f3;
+
 }
 .jobs {
   width: 32%;
@@ -92,6 +94,8 @@
   margin-right: 15px;
   padding: 15px;
   border-radius: 10px;
+  background-color: #f3f3f3;
+
 }
 .applied_jobs h3 {
   font-size: 22px;
@@ -121,6 +125,7 @@
   background-color: rgb(225, 223, 223);
   padding: 5px;
 }
+
 .savedJobs h3 {
   font-size: 22px;
   font-weight: bold;
@@ -137,6 +142,7 @@
   float: left;
   margin-right: 50px;
   margin-left: 50px;
+
 
 }
 .savedJobs img {
@@ -167,6 +173,9 @@
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f3f3f3;
+
+
 
 
 

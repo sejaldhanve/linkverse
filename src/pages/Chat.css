@@ -1,0 +1,155 @@
+.chat-app {
+  display: flex;
+  height: 600px;
+}
+
+.chat-list {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f1f1f1;
+  overflow-y: auto; /* Enable scrolling for chat list */
+}
+
+.chat-list h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.chat-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chat-list .person {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.chat-list .person:hover {
+  background-color: #e4e6eb;
+}
+
+.chat-list .person.active {
+  background-color: #0078d4;
+  color: white;
+}
+
+.chat-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 40px;
+  border: 1px solid black;
+}
+
+.person-name-img {
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+}
+
+.profile-name {
+  padding-left: 30px;
+}
+
+.chat-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #d9d7d7;
+  overflow: hidden; /* Prevent scrolling for the entire chat window */
+  
+}
+
+.chat-window h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.message-container {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable scrolling for messages */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add space between messages */
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin-right: 20px;
+}
+
+.message:not(.sent) {
+  background-color: #e4e6eb;
+  color: black;
+  align-self: flex-start; /* Align to the left */
+}
+
+.message.sent {
+  color: white;
+  align-self: flex-end; /* Align to the right */
+}
+
+.message.sent.text-message {
+  background-color: #0066cc; /* Light green background for sent text messages */
+}
+
+.sent-image {
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.file-link {
+  color: #0066cc; /* Blue for file links */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 0; /* Add spacing for aesthetics */
+  background-color: #fff;
+  border-top: 1px solid #ccc; /* Separator line */
+  position: sticky; /* Keep input container fixed */
+  bottom: 0; /* Stick to the bottom of the chat window */
+}
+
+.input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #5f5858;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #0056a3;
+}

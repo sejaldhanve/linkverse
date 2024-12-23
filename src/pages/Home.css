@@ -1,0 +1,63 @@
+.slider-container {
+    width: calc(100% - 160px);;
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+    box-sizing: border-box; 
+    margin-left: 80px;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+
+}
+
+/* Slider that moves content */
+.slider {
+    display: flex; /* Arrange items in a row */
+    width: 200%; /* Double the width for seamless looping */
+    animation: slide 15s linear infinite; /* Sliding animation */
+}
+
+/* Individual box content */
+.box {
+    min-width: 30%; /* Width of each box */
+    height: auto;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+}
+
+.box h2{
+    padding-top: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.box p{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* .box img {
+    width: 80%;
+} */
+
+/* Pause animation on hover */
+.slider-container:hover .slider {
+    animation-play-state: paused;
+}
+
+/* Keyframes for seamless sliding animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move halfway (one set of items) */
+    }
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../MyComponents/Header.js";
 import Content from "../MyComponents/Content.js";
 import Footer from "../MyComponents/Footer.js";
+import "./Home.css";
 
 export default function Home() {
   useEffect(() => {
@@ -9,7 +10,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Content />
+    <Content />
       </div>
   );
 }
